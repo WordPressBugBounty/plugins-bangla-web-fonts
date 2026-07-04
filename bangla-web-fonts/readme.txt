@@ -3,8 +3,8 @@ Contributors: imran2w
 Developer link: https://imran.link
 Tags: Bangla, Bengali, Bangla Font, Bangla Web Font, SolaimanLipi
 Requires at least: 3.0
-Tested up to: 6.9
-Stable tag: 1.4
+Tested up to: 7.0
+Stable tag: 1.4.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

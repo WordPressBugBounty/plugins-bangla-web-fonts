@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Bangla Web Fonts
-Plugin URI: http://xhostbd.com/
+Plugin URI: http://imran.link
 Description: Enables bangla web fonts.
-Author: M.A. IMRAN
-Version: 1.4
-Author URI: http://facebook.com/imran2w
+Author: ALI IMRAN
+Version: 1.4.1
+Author URI: https://imran.link
 */
 
 /*
@@ -14,22 +14,22 @@ This program is free software; you can redistribute it and/or modify it under th
 
 // Bismillah...
 
-	defined( 'ABSPATH' ) or die( 'Stop! You can not do this!' );
+defined( 'ABSPATH' ) or die( 'Stop! You can not do this!' );
+
+function embed_bangla_font() {
+	print(
+		'<link href="'.plugins_url( 'solaiman-lipi/font.css', __FILE__ ).'" rel="stylesheet">'
+	);
 	
-	function embed_bangla_font() {
-		print(
-			'<link href="'.plugins_url( 'solaiman-lipi/font.css', __FILE__ ).'" rel="stylesheet">'
-		);
-		
 	?>
-		<style>
-			body, article, h1, h2, h3, h4, h5, h6, textarea, input, select, .topbar, .main-menu, .breadcrumb, .copyrights-area, form span.required {
-				font-family: 'SolaimanLipi', Arial, sans-serif !important;
-			}
-		</style>
+	<style>
+		body, article, h1, h2, h3, h4, h5, h6, textarea, input, select, .topbar, .main-menu, .breadcrumb, .copyrights-area, form span.required {
+			font-family: 'SolaimanLipi', Arial, sans-serif !important;
+		}
+	</style>
 	<?php
-	}
+}
+
+add_action('wp_head', 'embed_bangla_font');
 	
-	add_action('wp_head', 'embed_bangla_font');
-	
-	?>
+?>
